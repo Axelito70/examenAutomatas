@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reemplazo de Palabras con Sinónimos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container my-4">
+        <h1 class="text-center">Reemplazo de Palabras con Sinónimos</h1>
+
+        <!-- Área de texto para ingresar palabras -->
+        <div class="mb-3">
+            <label for="textoInput" class="form-label">Ingresa tu texto aquí:</label>
+            <textarea class="form-control" id="textoInput" rows="5"></textarea>
+        </div>
+
+        <!-- Selector de palabra del diccionario -->
+        <div class="mb-3">
+            <label for="palabraDiccionario" class="form-label">Selecciona una palabra del diccionario para buscar:</label>
+            <select class="form-select" id="palabraDiccionario">
+                <option value="">Seleccionar palabra...</option>
+            </select>
+        </div>
+
+        <!-- Lista de opciones de sinónimos -->
+        <div id="resultadoSinonimos" class="remplazar">
+            <label for="sinonimosLista" class="form-label">Elige un sinónimo para reemplazar:</label>
+            <select class="form-select" id="sinonimosLista"></select>
+            <button class="btn btn-primary mt-3" id="reemplazarBtn">Reemplazar</button>
+        </div>
+
+        <!-- Botón de buscar palabra -->
+        <button class="btn btn-success mt-3" id="buscarBtn">Buscar palabra</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
